@@ -1,5 +1,5 @@
-# Portfolio
-Olá, esse repositório foi criado no intuito de armazenar meus projetos (enquanto aprendo novas linguagens de programação) e demonstrar minha experiência.
+# Aprendendo
+Olá, esse repositório foi criado no intuito de armazenar meus projetos, enquanto aprendo novas linguagens de programação.
 A fim de testar a Linguagem Markdow, irei compartilhar com você meus objetivos profissionais e objetivos de vida.
 ## Objetivos
 ### Profissionais (*de curto prazo*)
