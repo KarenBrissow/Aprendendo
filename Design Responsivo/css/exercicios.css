@@ -35,6 +35,7 @@ header {
 
 .menu-abrir:hover, .menu-fechar:hover {
     border-color: #ca0000;
+    cursor: pointer;
 }
 
 .menu-abrir {
