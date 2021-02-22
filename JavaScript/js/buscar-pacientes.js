@@ -9,14 +9,27 @@ botaoAdd.addEventListener("click", function () {
             erroAjax.classList.add("invisivel");
             var resposta = xhr.responseText;
             var pacientes = JSON.parse(resposta);
+            var itenstabela = document.querySelectorAll(".paciente");
+            var x = 0;
             pacientes.forEach(function (paciente) {
-                adicionaPacienteNaTabela(paciente);
+                for (var i = 0; i < itenstabela.length; i++) {
+                    var item = itenstabela[i];
+                    var pesquisa = item.textContent;
+                    if (!paciente.test(pesquisa)) {
+                        x = 0
+                    } else {
+                        x = 1
+                    };
+                };
+                if (x == 0){
+                    adicionaPacienteNaTabela(paciente);
+                }
             });
         } else {
             console.log(xhr.status);
             console.log(xhr.responseText);
             erroAjax.classList.remove("invisivel");
-        }
+        };
     });
     xhr.send();
 });
