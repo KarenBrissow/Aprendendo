@@ -21,7 +21,19 @@ botaoAdicionar.addEventListener("click", function (event) {
 function adicionaPacienteNaTabela(paciente) {
     var pacienteTr = montaTr(paciente);
     var tabela = document.querySelector("#tabela-pacientes");
-    tabela.appendChild(pacienteTr);
+    var itenstabela = document.querySelectorAll(".paciente");
+    var x = 0;
+    for (var i = 0; i < itenstabela.length; i++) {
+        var item = itenstabela[i];
+        var pesquisa = item.textContent;
+        if (pacienteTr.textContent == pesquisa) {
+            x = 1;
+            console.log("Paciente já cadastrado");
+        };
+    };
+    if (x == 0){
+        tabela.appendChild(pacienteTr);
+    }
 }
 
 function obtemPacienteDoFormulario(form) {
