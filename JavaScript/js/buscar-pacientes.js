@@ -10,15 +10,19 @@ botaoAdd.addEventListener("click", function () {
             var resposta = xhr.responseText;
             var pacientes = JSON.parse(resposta);
             var itenstabela = document.querySelectorAll(".paciente");
-            var x = 0;
+            var x = 1;
             pacientes.forEach(function (paciente) {
                 for (var i = 0; i < itenstabela.length; i++) {
                     var item = itenstabela[i];
                     var pesquisa = item.textContent;
-                    if (!paciente.test(pesquisa)) {
-                        x = 0
+                    if (paciente != pesquisa) {
+                        x = 0;
+                        console.log(paciente);
+                        console.log('diferente de');
+                        console.log(pesquisa);
                     } else {
-                        x = 1
+                        x = 1;
+                        console.log("Paciente igual a pesquisa");
                     };
                 };
                 if (x == 0){
