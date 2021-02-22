@@ -23,7 +23,7 @@ function adicionaPacienteNaTabela(paciente) {
     var tabela = document.querySelector("#tabela-pacientes");
     var itenstabela = document.querySelectorAll(".paciente");
     var x = 0;
-    for (var i = 0; i < itenstabela.length; i++) {
+    for (var i = 0; i < itenstabela.length; i++) { //compara se tem paciente repetido
         var item = itenstabela[i];
         var pesquisa = item.textContent;
         if (pacienteTr.textContent == pesquisa) {
