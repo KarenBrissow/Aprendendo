@@ -26,6 +26,9 @@ function adicionaPacienteNaTabela(paciente) {
     for (var i = 0; i < itenstabela.length; i++) { //compara se tem paciente repetido
         var item = itenstabela[i];
         var pesquisa = item.textContent;
+        console.log(pesquisa);
+        console.log(pacienteTr);
+        console.log(pacienteTr.textContent);
         if (pacienteTr.textContent == pesquisa) {
             x = 1;
             console.log("Paciente já cadastrado");
