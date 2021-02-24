@@ -21,23 +21,20 @@ botaoAdicionar.addEventListener("click", function (event) {
 function adicionaPacienteNaTabela(paciente) {
     var pacienteTr = montaTr(paciente);
     var tabela = document.querySelector("#tabela-pacientes");
-    var itenstabela = document.querySelectorAll(".paciente");
+    var itenstabela = document.querySelectorAll(".info-nome");
     var x = 0;
     for (var i = 0; i < itenstabela.length; i++) { //compara se tem paciente repetido
         var item = itenstabela[i];
         var pesquisa = item.textContent;
-        console.log(pesquisa);
-        console.log(pacienteTr);
-        console.log(pacienteTr.textContent);
-        if (pacienteTr.textContent == pesquisa) {
+        if (pacienteTr.querySelector('.info-nome').textContent === pesquisa) {
             x = 1;
             console.log("Paciente já cadastrado");
         };
     };
     if (x == 0){
         tabela.appendChild(pacienteTr);
-    }
-}
+    };
+};
 
 function obtemPacienteDoFormulario(form) {
     var paciente = {
