@@ -7,7 +7,7 @@ A fim de testar a Linguagem Markdow, irei compartilhar com você meus objetivos 
 - [ ] Finalizar um projeto de Data Science
 - [ ] Contribuir com um projeto de Data Science no GitHub
 ### De vida
-- [ ] Morar em alguma cidade do Sul
+- [X] Morar em alguma cidade do Sul
 - [ ] Conseguir visto para trabalhar e morar na Espanha ou Irlanda
 - [ ] Levar a minha família para conhecer a Alemanha
 - [ ] Conseguir cidadania espanhola ou visto de moradia permanente na Irlanda
